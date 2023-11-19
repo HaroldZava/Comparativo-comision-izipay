@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrada de Datos - Comparativo</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div id="input-form">
+    <h1>Ingrese los datos para el comparativo</h1>
+    <label for="monthly-sales">Venta mensual:</label>
+    <input type="number" id="monthly-sales" placeholder="Venta mensual" required>
+
+    <label for="debit-percentage">Porcentaje de ventas con T. Débito:</label>
+    <input type="number" id="debit-percentage" placeholder="% con débito" required>
+
+    <label for="credit-percentage">Porcentaje de ventas con T. Crédito:</label>
+    <input type="number" id="credit-percentage" placeholder="% con crédito" required>
+
+    <label for="commission-debit-other">Comisión T. Débito (Otros):</label>
+    <input type="number" id="commission-debit-other" placeholder="% de comisión débito - Otros" required>
+
+    <label for="commission-credit-other">Comisión T. Crédito (Otros):</label>
+    <input type="number" id="commission-credit-other" placeholder="% de comisión crédito - Otros" required>
+
+    <label for="commission-debit-izipay">Comisión T. Débito (Izipay):</label>
+    <input type="number" id="commission-debit-izipay" placeholder="% de comisión débito - Izipay" required>
+
+    <label for="commission-credit-izipay">Comisión T. Crédito (Izipay):</label>
+    <input type="number" id="commission-credit-izipay" placeholder="% de comisión crédito - Izipay" required>
+
+    <button id="generate-comparison">Generar Comparativo</button>
+  </div>
+
+  <script src="../js/inputScript.js"></script>
+</body>
+</html>

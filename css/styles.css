@@ -1,0 +1,109 @@
+/* Reset básico para estilos por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos generales del cuerpo de la página */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Estilos del formulario de entrada */
+  #input-form {
+    background-color: #fff;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  #input-form h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos de los inputs y el botón */
+  input[type=number] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    width: calc(100% - 20px); /* Corrige el padding */
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /* Media queries para diseño responsivo */
+  @media only screen and (min-width: 768px) {
+    #input-form {
+      padding: 40px;
+    }
+  
+    input[type=number], button {
+      font-size: 18px; /* Tamaño de texto más grande para dispositivos más grandes */
+    }
+  }
+  
+  /* Estilos de la página de resultados */
+  #results {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Estilos para las cajas de resultados, similar a las tarjetas */
+  .result-item {
+    background-color: #eee;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-left: 5px solid #007bff; /* Barra lateral para destacar */
+  }
+  
+  /* Más media queries para los resultados */
+  @media only screen and (min-width: 768px) {
+    #results {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 40px;
+    }
+  
+    .result-item {
+      width: 48%; /* Dos columnas en pantallas grandes */
+      margin-bottom: 20px;
+    }
+  
+    /* Estilo para el área de ahorros destacada */
+    .savings {
+      background-color: #dc3545;
+      color: #fff;
+      border-left-color: #c82333;
+    }
+  }
+  
